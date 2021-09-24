@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@600&display=swap');
+
+:root{
+    --text-primary:#000;
+    --bgPrimary:#fff;
+   --bgSecondary: #F9F9F9;
+   --pink: #ff000d;
+   --light-blue: #e6f7ff;
+   --border: #d9d9d9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:hover{
+    color: var(--pink) !important;
+}
+
+.app{
+    display: flex;
+    overflow: hidden;
+    
+}
+
+.navbar{
+    flex: 0.2;
+    background-color: rgb(0, 21, 41);
+}
+
+.main{
+    flex: 0.8;
+    width: 100%;
+    
+}
+.routes{
+    padding: 20px;
+}
+
+.heading{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: italic;
+}
+
+.nav-container{
+    position: fixed;
+    left: 0;
+    margin: 10px;
+    height: 100vh;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(0, 21, 41);
+}
+
+.menu-bar{
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.logo-container{
+    background-color: #001529;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+}
+.logo{
+    margin:0 0 0 20px;
+    padding-top: 10px;
+    font-family: 'Stick No Bills', sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.logo a{
+   color: white;
+   font-size: 30px;
+}
+.menu-control-container{
+    display: none !important;
+    position: absolute !important;
+    right: 10px !important;
+    top: 40px !important;
+    font-size: 3rem !important;
+    background-color: var(--bgSecondary) !important;
+    border: none !important;
+}
+
+.loader{
+    height: 81vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1300px){
+    .main{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:1170px){
+    .main{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .main{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .app{
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .navbar{
+        flex: 1;
+    }
+
+    .main{
+        flex: 1;
+        margin-top: 90px;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+    .nav-container{
+        height: 8vh;
+        position:fixed;
+        width: 100%;
+        z-index: 100;
+        background-color: var(--bgSecondary);
+    }
+  
+    .menu-control-container{
+        display: block !important;
+    }
+
+    .ant-menu{
+        position: absolute;
+        right: 0px;
+    }
+    .home-title{
+        font-size: 1.4rem !important;
+    }
+    .show-more{
+        font-size: 1.3rem !important;
+    }
+}
+
+.coin-detail-container{
+    margin: 30px;
+    font-size: 1rem;
+}
+
+.coin-heading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-bottom: 1px solid var(--border);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+.coin-heading-container h2{
+    font-size: 50px;
+}
+
+.coin-name{
+    font-family: 'Caramel', cursive;
+}
+
+.coin-heading-container .coin-name{
+    font-weight: 900;
+}
+
+.coin-heading-container p{
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.stats-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.stats-container h2{
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    color: var(--pink);
+}
+
+.coin-details-heading{
+    font-weight: 700 !important;
+    margin-top: 20px !important;
+    align-items: center;
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+.coin-details-heading1{
+    font-weight: 700 !important;
+    margin-top: 20px !important;
+    align-items: center;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+}
+
+.coin-details-heading1 p{
+    font-family: 'Asap Condensed', sans-serif;
+    margin-top: 15px;
+    word-spacing: 2px;
+}
+
+.coin-stats{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+    font-size: 1rem;
+    opacity: 0.9;
+    padding: 20px;
+
+}
+
+.coin-stats-name{
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.stats{
+    font-weight: 800;
+}
+
+.coin-value-statistics-heading h3{
+    font-size: 30px;
+}
+
+.coin-value-statistics-heading p{
+    font-size: 1rem;
+    opacity: 0.9;
+    text-align: center;
+    font-style: italic;
+}
+
+.coin-desc-link{
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.coin-desc-link h2{
+    font-weight: 700;
+    color: var(--pink);
+}
+
+.coin-desc-link p{
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.coin-desc-link a{
+    color: var(--pink);
+}
+
+.coin-desc-link h3{
+    font-weight: 700;
+}
+
+.coin-desc{
+    flex: 0.5;
+}
+
+.coin-links{
+    padding: 0px 20px;
+    flex: 0.5;
+    color: blue;
+}
+
+.coin-links h3{
+    font-size: 30px;
+}
+
+.coin-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: italic;
+    border-bottom: 1px solid var(--border);
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+}
+
+.link-name{
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: blue;
+}
+
+.coin-link a{
+    color: var(--pink);
+    font-weight: 700;
+    font-size: 1rem;
+    color: blue;
+}
+
+.coin-link:hover, .coin-stats:hover{
+    background-color: var(--bgSecondary);
+}
+
+@media screen and (max-width:1000px){
+    .stats-container{
+        flex-direction: column;
+    }
+    .coin-desc-link{
+        flex-direction: column;
+    }
+    .stats-container h2{
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .coin-links{
+        padding: 0px;
+    }
+    .coin-detail-container{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 500px){
+    .heading{
+        margin-top: 20px;
+    }
+}
+
+.select-news{
+    width: 180px;
+}
+.news-card{
+    min-height: 300px !important;
+}
+.news-image-container{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.news-title{
+    width: 70%;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.news-image-container .img{
+    width:100px;
+    height:100px;
+}
+.news-card p{
+    color: black;
+    margin: 10px 0px !important;
+    font-style: italic;
+}
+.provider-container{
+    display: flex;
+    justify-content: space-between;
+}
+.provider-name{
+    margin-left: 10px;
+    font-weight: bold;
+
+}
+
+.chart-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    color: #0071bd;
+}
+.chart-title{
+    font-family: 'Caramel', cursive;
+    margin-top: 20px;
+}
+.price-container{
+    display: flex !important;
+    gap: 20px !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+}
+.price-change{
+    font-weight: 900 !important;
+}
+.current-price{
+    margin-top: 0px !important;
+    font-weight: 900 !important;
+}
+.home-heading-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+.show-more{
+    margin-top: 0px !important;
+}
+.exchange-image{
+    margin: 0px 10px !important;
+}
+.search-crypto{
+    margin: 20px auto 30px auto;
+    width: 250px;
+}
+.crypto-card-container{
+    min-height: 65vh !important;
+}
+.crypto-card{
+    min-width: 250px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 50px;
+}
+
+.card-name{
+    font-family: 'Karla', sans-serif;
+}
+
+.card-details{
+    font-size: 20px;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.crypto-card .crypto-image{
+    width:35px;
+}
+.select-timeperiod{
+    width: 200px !important;
+    margin-top: 20px !important;
+}
+
+.footer {
+    background-color: #001529;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 20px;
+    align-items: center;
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+.footer h5{
+    font-size: 30px;
+}
+
+.footer h5 a{
+    color: rgb(0, 255, 0);
+}
+
+.exchanges{
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    font-style: italic;
+    align-items: center;
+}
