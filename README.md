@@ -55,7 +55,7 @@
 - [REACT ROUTER DOM](https://reactrouter.com/web/guides/quick-start)
 - [AXIOS](https://www.npmjs.com/package/axios)
 - [HTML REACT PARSER](https://www.npmjs.com/package/html-react-parser)
-- [MILLIFY](https://www.npmjs.com/package/millify
+- [MILLIFY](https://www.npmjs.com/package/millify)
 - [COIN RANKING API](https://rapidapi.com/Coinranking/api/coinranking1/)
 - [BING NEWS SEARCH API](https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1/)
 
